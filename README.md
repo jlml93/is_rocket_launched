@@ -15,5 +15,7 @@ You have 4 commands:
 3- Yes, If user send Yes the last frame is updated with the frame_to_user param
 4- No, If user send No the first frame is updated with the frame_to_user param
 
+
+The final argument in function bisect is "Divide and conquer".
 # SOLUTION:
 When the first_frame is mayor than last_frame then return the last frame found it and the "game" end.
