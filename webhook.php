@@ -97,7 +97,7 @@ class Webhook {
         if ($option == 'Yes') {
             $right = $objUser['frame_to_user'];
         } else if($option == 'No'){
-            $left = $objUser['frame_to_user'];
+            $left = $objUser['frame_to_user'] + 1;
         } 
         $mid = intval(($left + $right) / 2);
         $info = new stdClass();
@@ -119,7 +119,7 @@ class Webhook {
         $buttons = [];
         // If frame is found return only option /start
         if($message->found){
-            $caption ='f"Found! Take-off = "' . $message->frame_to_user;
+            $caption ='f"Found! Take-off = "' . $message->frame_to_user . ' - Date: '. date('l jS \of F Y h:i:s A');
             $buttons = [['/start']];
         } else {
             $caption = 'f' . $message->frame_to_user . ' - did the rocket launch yet? (yes / no)';
