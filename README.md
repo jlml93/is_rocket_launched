@@ -1,5 +1,5 @@
 Detect in PHP if rocket is launched
-
+The name of the bot is "is_rocket_launch_wm" @JMLBot
 # REQUISITES
 - PHP 7.2
 - SQLite 3 enable
